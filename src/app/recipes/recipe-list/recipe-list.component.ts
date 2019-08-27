@@ -7,12 +7,11 @@ import { Recipe } from '../recipe.model';
   styleUrls: ['./recipe-list.component.css']
 })
 export class RecipeListComponent implements OnInit {
-    recipes: Recipe[] = [
-      new Recipe('Salmon Fish', 'This is Salmon Fish', 'E:\Learning\AngularUdemy\my-first-app/IMG_9103.jpg')
-    ];
-  constructor() { }
+  recipes: Recipe[] = [
+    new Recipe('Salmon Fish', 'This is Salmon Fish', 'https://www.jessicagavin.com/wp-content/uploads/2019/01/baked-salmon-8-1200.jpg'),
+    new Recipe('Seabass Fish', 'This is Seabass Fish', 'https://gbc-cdn-public-media.azureedge.net/img15745.768x512.jpg')
+  ];
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
